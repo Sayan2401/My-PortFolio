@@ -1,0 +1,103 @@
+#root {
+    /* background: linear-gradient(135deg, #121111, #0348f5); */
+    /* background: linear-gradient(to bottom right, #0b2c5f, #1e5fa8); */
+    /* background-color: #0b2c5f; */
+    background: linear-gradient(to bottom, #5d08e5, #271153, #03083f, #000000);
+
+
+
+}
+
+.message-btn {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border-radius: 6px;
+    height: 3rem;
+}
+
+.message-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transform: skewX(30deg);
+    background: linear-gradient(to right, #08eaea, #5d08e5);
+    z-index: -1;
+    transition: transform 0.5s ease;
+
+}
+
+.message-btn:hover::before {
+    transform: skewX(30deg) translateX(150%);
+}
+
+.message-btn:hover {
+    background: linear-gradient(135deg, #08eaea, #5d08e5);
+    color: white;
+    border-color: white;
+}
+
+
+.about-header {
+
+    border-left: 2px solid #fb7527;
+
+}
+
+.skill-btn {
+    border-radius: 1rem;
+}
+
+.skill-btn:hover {
+    outline: 1px solid #fb7527;
+}
+
+header {
+    background-color: #000;
+
+}
+
+header .nav-link {
+    color: white;
+
+}
+
+header .nav-link.active,
+header .nav-link:hover {
+    color: #fb7527;
+    text-decoration: underline;
+}
+
+/* .body-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+     height: 100vh; 
+    object-fit:;
+    z-index: -1;
+} */
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-animation {
+    animation: rotateInfinite 4s linear infinite;
+}
