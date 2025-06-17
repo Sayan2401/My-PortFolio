@@ -27,7 +27,7 @@ const Hero = () => {
                 <div className='text-end'>
                     <a href="#Projects" >
                         <img
-                            src="/round-text.png"
+                            src="round-text.png"
                             className="img-fluid rotate-animation"
                             alt="round text"
                         />
