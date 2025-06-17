@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [statusMessage, setStatusMessage] = useState('');
+    const [statusType, setStatusType] = useState(''); // 'success' or 'error'
+
+    console.log("Service ID:", process.env.REACT_APP_SERVICE_ID);
+    console.log("Template ID:", process.env.REACT_APP_TEMPLATE_ID);
+    console.log("Public ID:", process.env.REACT_APP_PUBLIC_ID);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,10 +18,14 @@ const Contact = () => {
             e.target,
             process.env.REACT_APP_PUBLIC_ID
         )
-            .then((result) => {
-                alert('Message sent successfully!');
-            }, (error) => {
-                alert('Failed to send. Try again later.');
+            .then(() => {
+                setStatusMessage('Message sent successfully!');
+                setStatusType('success');
+                e.target.reset(); // Clear the form
+            })
+            .catch(() => {
+                setStatusMessage('Failed to send. Please try again later.');
+                setStatusType('error');
             });
     };
 
@@ -36,7 +46,7 @@ const Contact = () => {
                 <div className="row g-3">
                     <div className="col-md-6">
                         <label htmlFor="name" className='form-label'>Full Name*</label>
-                        <input type="text" className='form-control' id='name' name='Name' placeholder='Your Full Name' required />
+                        <input type="text" className='form-control' id='name' name='name' placeholder='Your Full Name' required />
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="email" className='form-label'>Email*</label>
@@ -50,10 +60,19 @@ const Contact = () => {
                         <label htmlFor="budget" className='form-label'>Your Budget</label>
                         <input type="number" className='form-control' id='budget' name='budget' placeholder='Project Budget (Optional)' />
                     </div>
-                    <div className="col-12">
-                        <label htmlFor="message" className='form-label'>Message</label>
-                        <textarea className='form-control' id='message' name='Message' rows="1" placeholder='Write your message here...'></textarea>
+                    <div className="col-md-6">
+                        <label htmlFor="company" className='form-label'>Company*</label>
+                        <input type="tel" className='form-control' id='company' name='company' placeholder='Your Company' />
                     </div>
+                    <div className="col-md-6">
+                        <label htmlFor="website" className='form-label'>Your Company Website*</label>
+                        <input type="number" className='form-control' id='website' name='website' placeholder='Company Website' />
+                    </div>
+                    <div className="col-12">
+                        <label htmlFor="Message" className='form-label'>Message</label>
+                        <textarea className='form-control' id='Message' name='Message' rows="4" placeholder='Write your message here...'></textarea>
+                    </div>
+                    <input type="hidden" name="time" value={new Date().toLocaleString()} />
                 </div>
                 <hr className='my-4' />
                 <div className='text-end'>
@@ -62,6 +81,12 @@ const Contact = () => {
                     </button>
                 </div>
             </form>
+
+            {statusMessage && (
+                <div className={`alert ${statusType === 'success' ? 'alert-success' : 'alert-danger'} mt-3`} role="alert">
+                    {statusMessage}
+                </div>
+            )}
         </section>
     );
 };

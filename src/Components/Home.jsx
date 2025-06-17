@@ -1,7 +1,6 @@
 import React from 'react';
 import Rightside from './Rightside';
 import Header from './Header';
-import Services from './Services';
 import Leftside from './Leftside';
 import Resume from './Resume';
 import Contact from './Contact';

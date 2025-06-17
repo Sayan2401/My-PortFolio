@@ -5,7 +5,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'About', 'Projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'contact'];
       const offsets = sections.map(id => {
         const el = document.getElementById(id);
         return el ? { id, offsetTop: el.offsetTop } : null;
@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <header className="fixed-top">
-      <ul className="nav justify-content-end shadow-sm px-3 py-2">
+      <ul className="nav px-3 py-2">
         <li className="nav-item">
           <a
             className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
@@ -43,7 +43,7 @@ function Header() {
           <a
             className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
             onClick={() => setActiveTab('about')}
-            href="#About"
+            href="#about"
           >
             <i className="fas fa-user-gear me-2 text-primary"></i>
             About
@@ -53,7 +53,7 @@ function Header() {
           <a
             className={`nav-link ${activeTab === 'projects' ? 'active' : ''}`}
             onClick={() => setActiveTab('projects')}
-            href="#Projects"
+            href="#projects"
           >
             <i className="fas fa-project-diagram me-2 text-primary"></i>
             Projects

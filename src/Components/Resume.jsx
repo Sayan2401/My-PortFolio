@@ -60,7 +60,7 @@ const Resume = () => {
             </div>
 
             {/* Projects Section */}
-            <section className="row mt-5" id="Projects">
+            <section className="row mt-5" id="projects">
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-project-diagram me-2 text-primary"></i>
                     My Projects
