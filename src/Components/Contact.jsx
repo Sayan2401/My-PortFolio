@@ -62,11 +62,11 @@ const Contact = () => {
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="company" className='form-label'>Company*</label>
-                        <input type="tel" className='form-control' id='company' name='company' placeholder='Your Company' />
+                        <input type="text" className='form-control' id='company' name='company' placeholder='Your Company' />
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="website" className='form-label'>Your Company Website*</label>
-                        <input type="number" className='form-control' id='website' name='website' placeholder='Company Website' />
+                        <input type="text" className='form-control' id='website' name='website' placeholder='Company Website' />
                     </div>
                     <div className="col-12">
                         <label htmlFor="Message" className='form-label'>Message</label>
