@@ -1,10 +1,28 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_PUBLIC_ID
+        )
+            .then((result) => {
+                alert('Message sent successfully!');
+            }, (error) => {
+                alert('Failed to send. Try again later.');
+            });
+    };
+
     return (
         <section className='container mt-4' id='contact'>
             <div className='px-3 fs-3 mb-3 about-header'>
-                 <i className="fas fa-paper-plane me-2 text-primary"></i> 
+                <i className="fas fa-paper-plane me-2 text-primary"></i>
                 Contact
             </div>
             <div className="fs-2 fw-semibold my-2">
@@ -14,7 +32,7 @@ const Contact = () => {
                 Reach me at <a href="mailto:chhatrasinh345@gmail.com" className='text-decoration-none text-primary'>chhatrasinh345@gmail.com</a>
             </div>
 
-            <form className='my-3'>
+            <form className='my-3' onSubmit={handleSubmit}>
                 <div className="row g-3">
                     <div className="col-md-6">
                         <label htmlFor="name" className='form-label'>Full Name*</label>

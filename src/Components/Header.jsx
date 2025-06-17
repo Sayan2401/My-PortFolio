@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <header className="fixed-top">
-      <ul className="nav justify-content-end bg-white shadow-sm px-3 py-2">
+      <ul className="nav justify-content-end shadow-sm px-3 py-2">
         <li className="nav-item">
           <a
             className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
