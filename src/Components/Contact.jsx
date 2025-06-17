@@ -5,10 +5,6 @@ const Contact = () => {
     const [statusMessage, setStatusMessage] = useState('');
     const [statusType, setStatusType] = useState(''); // 'success' or 'error'
 
-    console.log("Service ID:", process.env.REACT_APP_SERVICE_ID);
-    console.log("Template ID:", process.env.REACT_APP_TEMPLATE_ID);
-    console.log("Public ID:", process.env.REACT_APP_PUBLIC_ID);
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -42,7 +38,7 @@ const Contact = () => {
                 Reach me at <a href="mailto:chhatrasinh345@gmail.com" className='text-decoration-none text-primary'>chhatrasinh345@gmail.com</a>
             </div>
 
-            <form className='my-3' onSubmit={handleSubmit}>
+            <form className='mt-3' onSubmit={handleSubmit}>
                 <div className="row g-3">
                     <div className="col-md-6">
                         <label htmlFor="name" className='form-label'>Full Name*</label>
