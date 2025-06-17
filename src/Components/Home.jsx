@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div className='container'>
+            <section className='container' id='home'>
                 <div className="row">
                     <div className='col-md-4 col-12'>
                         <Leftside />
@@ -19,7 +19,7 @@ const Home = () => {
                         <Rightside />
                     </div>
                 </div>
-            </div>
+            </section>
             <Resume />
             <Contact />
         </>

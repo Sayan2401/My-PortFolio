@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 <div className='fs-5'>
                     <p className='mb-3'>
-                        Welcome to my portfolio! I'm <strong>Chhatrasinh Parmar</strong>, an aspiring computer engineer with hands-on experience in full-stack development, IoT, and machine learning.
+                        Welcome to my portfolio! I'm <strong>Chhatrasinh Parmar</strong>, an aspiring software developer with hands-on experience in full-stack development, IoT, and machine learning.
                     </p>
                     <p className='mb-3'>
                         I specialize in technologies like HTML, CSS, JavaScript, Core Java, Flutter, Node.js, and SQL. I build end-to-end solutions that blend robust functionality with intuitive user experiences.

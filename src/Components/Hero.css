@@ -7,6 +7,9 @@
 
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .message-btn {
     display: inline-block;

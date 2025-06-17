@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <div className='text-start my-5 fs-1' >
                 <Typewriter
-                    words={['Hello I Am Chhatrasinh, Computer Engineer',]}
+                    words={['Hello I Am Chhatrasinh, Software Developer',]}
                     loop={true}
                     cursor
                     cursorStyle='.'

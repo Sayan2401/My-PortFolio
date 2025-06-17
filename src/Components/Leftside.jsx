@@ -8,7 +8,7 @@ const Leftside = () => {
                 <span className="fs-4 fs-md-3 text-uppercase d-block fw-bold">
                     Chhatrasinh
                 </span>
-                <span className="d-block fs-6">Developer</span>
+                <span className="d-block fs-6">Software Developer</span>
             </div>
 
             {/* Profile Image */}
