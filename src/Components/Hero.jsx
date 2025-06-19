@@ -25,7 +25,7 @@ const Hero = () => {
                         </a>
                     </div> */}
                 <div className='text-end'>
-                    <a href="#Projects" >
+                    <a href="#projects" >
                         <img
                             src="round-text.png"
                             className="img-fluid rotate-animation"

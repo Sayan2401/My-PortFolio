@@ -53,7 +53,7 @@ const Leftside = () => {
                         <i className="fab fa-linkedin-in fa-lg me-2"></i> LinkedIn
                     </a>
                 </span>
-                <a href="mailto:chhatrasinh345@gmail.com" >
+                <a href="https://mail.google.com/mail/?view=cm&to=chhatrasinh345@gmail.com" target="_blank">
                     <button className='fs-5 mb-4 btn message-btn'>
                         <i className="fas fa-envelope me-2"></i> Hire Me
                     </button>

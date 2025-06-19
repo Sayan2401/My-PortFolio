@@ -27,49 +27,56 @@ function Header() {
   }, []);
 
   return (
-    <header className="fixed-top">
-      <ul className="nav px-3 py-2">
-        <li className="nav-item">
-          <a
-            className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
-            onClick={() => setActiveTab('home')}
-            href="#home"
-          >
-            <i className="fas fa-home me-2 text-primary"></i>
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
-            onClick={() => setActiveTab('about')}
-            href="#about"
-          >
-            <i className="fas fa-user-gear me-2 text-primary"></i>
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className={`nav-link ${activeTab === 'projects' ? 'active' : ''}`}
-            onClick={() => setActiveTab('projects')}
-            href="#projects"
-          >
-            <i className="fas fa-project-diagram me-2 text-primary"></i>
-            Projects
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className={`nav-link ${activeTab === 'contact' ? 'active' : ''}`}
-            onClick={() => setActiveTab('contact')}
-            href="#contact"
-          >
-            <i className="fas fa-paper-plane me-2 text-primary" />
-            Contact
-          </a>
-        </li>
-      </ul>
+    <header className='fixed-top'>
+      <nav className='navbar navbar-expand-lg'>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 px-3 py-2">
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
+                onClick={() => setActiveTab('home')}
+                href="#home"
+              >
+                <i className="fas fa-home me-2 text-primary"></i>
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
+                onClick={() => setActiveTab('about')}
+                href="#about"
+              >
+                <i className="fas fa-user-gear me-2 text-primary"></i>
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'projects' ? 'active' : ''}`}
+                onClick={() => setActiveTab('projects')}
+                href="#projects"
+              >
+                <i className="fas fa-project-diagram me-2 text-primary"></i>
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'contact' ? 'active' : ''}`}
+                onClick={() => setActiveTab('contact')}
+                href="#contact"
+              >
+                <i className="fas fa-paper-plane me-2 text-primary" />
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 }
