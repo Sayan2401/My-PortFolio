@@ -24,7 +24,7 @@ html {
     transition: all 0.3s ease;
     font-size: 1rem;
     border-radius: 6px;
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .message-btn::before {
@@ -78,6 +78,9 @@ header {
 
 #home {
     padding-top: 2rem;
+}
+.rotate-img{
+    height: 7rem;
 }
 
 .nav-item .nav-link {

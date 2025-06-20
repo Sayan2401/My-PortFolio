@@ -54,7 +54,7 @@ const Leftside = () => {
                     </a>
                 </span>
                 <a href="https://mail.google.com/mail/?view=cm&to=chhatrasinh345@gmail.com" target="_blank">
-                    <button className='fs-5 mb-4 btn message-btn'>
+                    <button className='fs-5 mb-2 btn message-btn px-4 my-2'>
                         <i className="fas fa-envelope me-2"></i> Hire Me
                     </button>
                 </a>

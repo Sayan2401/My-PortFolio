@@ -24,7 +24,7 @@ const Hero = () => {
                             <button className='btn' id='contact-btn'>Contact Me</button>
                         </a>
                     </div> */}
-                <div className='text-end'>
+                <div className='text-end rotate-img'>
                     <a href="#projects" >
                         <img
                             src="round-text.png"
