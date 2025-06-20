@@ -79,14 +79,18 @@ header {
 #home {
     padding-top: 2rem;
 }
-.rotate-img{
-    height: 7rem;
-}
+
+
 
 .nav-item .nav-link {
     color: white;
 
 }
+
+/* .fa-arrow-down {
+    align-items: center;
+    text-align: center;
+} */
 
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
@@ -113,7 +117,16 @@ header {
         transform: rotate(360deg);
     }
 }
-
 .rotate-animation {
     animation: rotateInfinite 4s linear infinite;
+    width: 7rem;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black; /* Or white depending on background */
 }

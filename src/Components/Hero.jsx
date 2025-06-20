@@ -24,15 +24,18 @@ const Hero = () => {
                             <button className='btn' id='contact-btn'>Contact Me</button>
                         </a>
                     </div> */}
-                <div className='text-end rotate-img'>
-                    <a href="#projects" >
+                <div className='text-end'>
+                    <a href="#projects" className="position-relative d-inline-block">
                         <img
                             src="round-text.png"
                             className="img-fluid rotate-animation"
                             alt="round text"
                         />
+                        <i className="fas fa-arrow-down overlay-icon"></i>
                     </a>
                 </div>
+
+
 
             </div>
 
