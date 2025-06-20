@@ -119,7 +119,7 @@ header {
 }
 .rotate-animation {
     animation: rotateInfinite 4s linear infinite;
-    width: 7rem;
+    width: 8.8rem;
 }
 
 .overlay-icon {
@@ -127,6 +127,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 3rem;
     color: black; /* Or white depending on background */
 }

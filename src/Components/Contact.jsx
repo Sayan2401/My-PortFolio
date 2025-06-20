@@ -35,7 +35,7 @@ const Contact = () => {
                 Let's Work Together!
             </div>
             <div className='fs-5 text-secondary mb-4'>
-                Reach me at <a href="https://mail.google.com/mail/?view=cm&to=chhatrasinh345@gmail.com" className='text-decoration-none text-primary' target="_blank">chhatrasinh345@gmail.com</a>
+                Reach me at <a href="https://mail.google.com/mail/?view=cm&to=chhatrasinh345@gmail.com" className='text-decoration-none text-primary' target="_blank" rel="noopener noreferrer">chhatrasinh345@gmail.com</a>
             </div>
 
             <form className='mt-3' onSubmit={handleSubmit}>
