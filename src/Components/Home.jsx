@@ -21,14 +21,14 @@ const Home = () => {
         <>
             {!showContent ? (
                 <div className='d-flex justify-content-center align-items-center vh-100'>
-                    
-                        <Lottie
-                            animationData={animationData}
-                            loop={true}
-                            style={{ width: '25vw', height: 'auto', margin: '0 auto' }}
-                        />
-                        {/* <h2 className="text-light mt-3">Loading Portfolio...</h2> */}
-                    
+
+                    <Lottie
+                        animationData={animationData}
+                        loop={true}
+                        style={{ width: '25vw', height: 'auto', margin: '0 auto' }}
+                    />
+                    {/* <h2 className="text-light mt-3">Loading Portfolio...</h2> */}
+
                     {/* <div className="spinner-border text-light mt-3" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div> */}
@@ -50,6 +50,11 @@ const Home = () => {
                         <Resume />
                         <Contact />
                     </div>
+                    <footer className="bg-dark text-light py-4 row">
+                        <p className="text-center mb-0">
+                            &#9400; 2025 Chhatrasinh Parmar. All Rights Reserved.
+                        </p>
+                    </footer>
                 </div>
             )}
         </>
