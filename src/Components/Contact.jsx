@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='container mt-4' id='contact'>
+        <section className='mt-4' id='contact'>
             <div className='px-3 fs-3 mb-3 about-header'>
                 <i className="fas fa-paper-plane me-2 text-primary"></i>
                 Contact
@@ -53,16 +53,16 @@ const Contact = () => {
                         <input type="tel" className='form-control' id='Phone' name='Phone' placeholder='Your Phone Number' />
                     </div>
                     <div className="col-md-6">
-                        <label htmlFor="budget" className='form-label'>Your Budget</label>
-                        <input type="number" className='form-control' id='budget' name='budget' placeholder='Project Budget (Optional)' />
+                        <label htmlFor="budget" className='form-label'>Your Budget (Optional)</label>
+                        <input type="number" className='form-control' id='budget' name='budget' placeholder='Project Budget' />
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="company" className='form-label'>Company*</label>
-                        <input type="text" className='form-control' id='company' name='company' placeholder='Your Company' />
+                        <input type="text" className='form-control' id='company' name='company' placeholder='Your Company' required />
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="website" className='form-label'>Your Company Website*</label>
-                        <input type="text" className='form-control' id='website' name='website' placeholder='Company Website' />
+                        <input type="text" className='form-control' id='website' name='website' placeholder='Company Website' required />
                     </div>
                     <div className="col-12">
                         <label htmlFor="Message" className='form-label'>Message</label>
@@ -72,17 +72,37 @@ const Contact = () => {
                 </div>
                 <hr className='my-4' />
                 <div className='text-end'>
-                    <button type="submit" className='btn message-btn px-4 my-2'>
+                    <button type="submit" className='btn message-btn px-4 my-2 mb-5'>
                         Send Message
                     </button>
                 </div>
             </form>
 
             {statusMessage && (
-                <div className={`alert ${statusType === 'success' ? 'alert-success' : 'alert-danger'} mt-3`} role="alert">
-                    {statusMessage}
+                <div
+                    className="toast-container position-fixed top-0 end-0 p-3"
+                    style={{ zIndex: 9999 }}
+                >
+                    <div
+                        className={`toast show align-items-center text-white ${statusType === 'success' ? 'bg-success' : 'bg-danger'
+                            } border-0`}
+                        role="alert"
+                    >
+                        <div className="d-flex">
+                            <div className="toast-body">
+                                {statusMessage}
+                            </div>
+                            <button
+                                type="button"
+                                className="btn-close btn-close-white me-2 m-auto"
+                                onClick={() => setStatusMessage('')}
+                            ></button>
+                        </div>
+                    </div>
                 </div>
             )}
+
+
         </section>
     );
 };

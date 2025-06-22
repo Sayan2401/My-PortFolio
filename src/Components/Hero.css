@@ -65,11 +65,11 @@ html {
 .skill-btn:hover {
     outline: 1px solid #fb7527;
 }
-
+/* 
 header {
     background-color: #000;
 
-}
+} */
 
 .navbar-toggler {
     background: linear-gradient(135deg, #08eaea, #5d08e5);

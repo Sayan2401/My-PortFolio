@@ -22,62 +22,64 @@ const Resume = () => {
     ];
 
     return (
-        <div className='text-start mt-4'>
+        <div className='mt-4'>
 
             {/* Education Section */}
-            <div className='container'>
-                <div className='px-3 fs-3 mb-3 about-header'>
-                    <i className="fas fa-graduation-cap me-2 text-primary"></i>
-                    Education
-                </div>
-
-                <div className='text-secondary'>2021-2025</div>
-                <div className="fs-5 mb-4">
-                    <strong>B.E in Computer Science & Engineering</strong><br />
-                    The Maharaja Sayajirao University, Vadodara
-                </div>
-
-                <div className='text-secondary '>2019-2021</div>
-                <div className="fs-5 mb-4">
-                    <strong>Higher Secondary Education</strong><br />
-                    S.I.D Science Sankul Gurukul Vidyalaya, Vadodara
-                </div>
-            </div>
-
-            {/* Skills Section */}
-            <div className='container'>
-                {Techs.map((item, index) => (
-                    <div key={index}>
-                        <div className='px-3 fs-3 mb-3 about-header'>
-                            <i className="fas fa-laptop-code me-2 text-primary"></i>
-                            {item.title}
-                        </div>
-
-                        {item.Tools.map((tool, idx) => (
-                            <div key={idx}>
-                                <div className="fs-5 text-secondary  my-3">
-                                    {tool.header}
-                                </div>
-                                <div className="d-flex flex-wrap">
-                                    {tool.skills.map((skill, idx2) => (
-                                        <div
-                                            key={idx2}
-                                            className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
-                                        >
-                                            {skill}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-
+            <div className="row">
+                <div className="col-md-6">
+                    <div className='px-3 fs-3 mb-3 about-header'>
+                        <i className="fas fa-graduation-cap me-2 text-primary"></i>
+                        Education
                     </div>
-                ))}
-            </div>
 
+                    <div className='text-secondary mb-2'>2021-2025</div>
+                    <div className="fs-5 mb-4">
+                        <strong>B.E in Computer Science & Engineering</strong><br />
+                        The Maharaja Sayajirao University, Vadodara
+                    </div>
+
+                    <div className='text-secondary mb-2'>2019-2021</div>
+                    <div className="fs-5 mb-4">
+                        <strong>Higher Secondary Education</strong><br />
+                        S.I.D Science Sankul Gurukul Vidyalaya, Vadodara
+                    </div>
+                </div>
+
+
+                {/* Skills Section */}
+                <div className='col-md-6'>
+                    {Techs.map((item, index) => (
+                        <div key={index}>
+                            <div className='px-3 fs-3 mb-3 about-header'>
+                                <i className="fas fa-laptop-code me-2 text-primary"></i>
+                                {item.title}
+                            </div>
+
+                            {item.Tools.map((tool, idx) => (
+                                <div key={idx}>
+                                    <div className="fs-5 text-secondary mb-3">
+                                        {tool.header}
+                                    </div>
+                                    <div className="d-flex flex-wrap mb-4">
+                                        {tool.skills.map((skill, idx2) => (
+                                            <div
+                                                key={idx2}
+                                                className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
+                                            >
+                                                {skill}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+
+                        </div>
+                    ))}
+                </div>
+            </div>
 
             {/* Projects Section */}
-            <section className="mt-5 container" id="projects">
+            <section className="mt-5 " id="projects">
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-project-diagram me-2 text-primary"></i>
                     My Projects
