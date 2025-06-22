@@ -17,7 +17,8 @@ const Hero = () => {
                 />
 
                 <p className='fs-5'>
-                    I design and code beautifully simple things and i love what i do. Just simple like that!
+                    Fueling my journey with curiosity and code,
+                    to build meaningful tech that connects and empowers.
                 </p>
                 {/* <div className='text-center mb-3'>
                         <a href="/#contact">

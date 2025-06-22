@@ -4,26 +4,29 @@ const About = () => {
     return (
         <section id='about' className=' my-4'>
             <div className='text-start'>
-
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-user-gear me-2 text-primary"></i>
                     About Me
                 </div>
                 <div className='fs-5'>
                     <p className='mb-3'>
-                        Welcome to my portfolio! I'm <strong>Chhatrasinh Parmar</strong>, an aspiring software developer with hands-on experience in full-stack development, IoT, and machine learning.
+                        Welcome to my portfolio! I'm <strong>Chhatrasinh Parmar</strong>, an aspiring software developer with hands-on experience in web development, app development, and machine learning.
                     </p>
+
                     <p className='mb-3'>
-                        I specialize in technologies like HTML, CSS, JavaScript, Core Java, Flutter, Node.js, and SQL. I build end-to-end solutions that blend robust functionality with intuitive user experiences.
+                        I specialize in technologies at varying levels of expertise—<strong>Beginner</strong> in MongoDB, MySQL, IoT, and React, and <strong>Intermediate</strong> in Core Java, HTML5, CSS, JavaScript, Flutter, Node.js, and SQL.
                     </p>
+
                     <p className='mb-3'>
-                        Notable work includes an <strong>Eco-Friendly Lifestyle Tracker</strong> app—developed using Flutter, Node.js, and Firebase—to help users monitor and reduce their carbon footprint, and a strong <strong>MGVCL Management System</strong> using SQL for efficient data handling.
+                        My notable projects include an <strong>Eco-Friendly Lifestyle Tracker</strong> app—developed using Flutter, Node.js, and Firebase—to help users monitor and reduce their carbon footprint, and an <strong>MGVCL Management System</strong> built using SQL for efficient data handling.
                     </p>
+
                     <p className='mb-3'>
-                        I’ve trained under the <strong>Code Unnati Program</strong> and participated in advanced blockchain development initiatives, such as the <strong>Arbitrum Governance and Development</strong> workshop.
+                        I’ve trained and participated in initiatives under the <strong>Code Unnati Program</strong>, including advanced blockchain development workshops such as <strong>Arbitrum Governance and Development</strong>.
                     </p>
+
                     <p>
-                        My projects reflect a keen focus on clean design, real-world use cases, and scalable architecture. Take a look around, explore my work, and feel free to connect if you'd like to collaborate!
+                        Explore my portfolio to learn more about my work, and feel free to reach out for inquiries or potential collaborations. Thank you for visiting!
                     </p>
                 </div>
             </div>
