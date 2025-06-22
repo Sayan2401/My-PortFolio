@@ -22,10 +22,10 @@ const Resume = () => {
     ];
 
     return (
-        <div className='container mt-4'>
+        <div className=' mt-4'>
 
             {/* Education Section */}
-            <div>
+            <div className='container'>
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-graduation-cap me-2 text-primary"></i>
                     Education
@@ -45,7 +45,7 @@ const Resume = () => {
             </div>
 
             {/* Skills Section */}
-            <div >
+            <div className='container'>
                 {Techs.map((item, index) => (
                     <div key={index}>
                         <div className='px-3 fs-3 mb-3 about-header'>
@@ -77,7 +77,7 @@ const Resume = () => {
 
 
             {/* Projects Section */}
-            <section className="mt-5" id="projects">
+            <section className="mt-5 container" id="projects">
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-project-diagram me-2 text-primary"></i>
                     My Projects
