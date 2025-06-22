@@ -39,7 +39,7 @@ const Resume = () => {
                         The Maharaja Sayajirao University, Vadodara
                     </div>
 
-                    <div className='text-secondary'>2019-2021</div>
+                    <div className='text-secondary mb-4'>2019-2021</div>
                     <div className="fs-5">
                         <strong>Higher Secondary Education</strong><br />
                         S.I.D Science Sankul Gurukul Vidyalaya, Vadodara
@@ -47,7 +47,7 @@ const Resume = () => {
                 </div>
 
                 {/* Skills Section */}
-                <div className="col-md-6 col-12">
+                <div className="col-md-6 col-12 ">
                     {Techs.map((item, index) => (
                         <div key={index}>
                             <div className='px-3 fs-3 mb-3 about-header'>
@@ -57,7 +57,7 @@ const Resume = () => {
                             
                                 {item.Tools.map((tool, idx) => (
                                     <div key={idx}>
-                                        <div className="fs-5 text-secondary px-3 mb-3">
+                                        <div className="fs-5 text-secondary  mb-3">
                                             {tool.header}
                                         </div>
                                         <div className="d-flex flex-wrap">
@@ -66,7 +66,7 @@ const Resume = () => {
 
                                             <div
                                                 key={idx2}
-                                                className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
+                                                className='bg-dark skill-btn me-2 mb-2 pe-3 py-2 rounded-pill shadow-sm'
                                             >
                                                 {skill}
                                             </div>
