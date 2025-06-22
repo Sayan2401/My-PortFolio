@@ -4,10 +4,20 @@ const Resume = () => {
     const Techs = [
         {
             title: 'Technical Skills',
-            Tools: [
-                'Java', 'SQL', 'HTML5', 'CSS', 'JavaScript', 'React', 'Bootstrap',
-                'Node.js', 'Express', 'MongoDB / MySQL', 'Firebase', 'RESTful APIs',
-                'JWT / OAuth', 'VS Code', 'Git & GitHub', 'Postman', 'Flutter', 'Dart'
+            Tools: [{
+                header: "Beginner",
+                skills: [
+                    'MongoDB',' MySQL', 'IOT', 'React']
+
+            }, {
+                header: "Intermediate",
+                skills: [
+                    'Java', 'SQL', 'HTML5', 'CSS', 'JavaScript', 'Bootstrap',
+                    'Node.js', 'Express', 'RESTful APIs',
+                    'JWT / OAuth', 'VS Code', 'Git & GitHub', 'Flutter', 'Dart']
+
+            },
+
             ]
         }
     ];
@@ -40,20 +50,31 @@ const Resume = () => {
                 <div className="col-md-6 col-12">
                     {Techs.map((item, index) => (
                         <div key={index}>
-                            <div className='px-3 fs-3 my-3 about-header'>
+                            <div className='px-3 fs-3 mb-3 about-header'>
                                 <i className="fas fa-laptop-code me-2 text-primary"></i>
                                 {item.title}
                             </div>
-                            <div className="d-flex flex-wrap">
+                            
                                 {item.Tools.map((tool, idx) => (
-                                    <div
-                                        key={idx}
-                                        className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
-                                    >
-                                        {tool}
+                                    <div key={idx}>
+                                        <div className="fs-5 text-secondary px-3 mb-3">
+                                            {tool.header}
+                                        </div>
+                                        <div className="d-flex flex-wrap">
+
+                                        {tool.skills.map((skill, idx2) => (
+
+                                            <div
+                                                key={idx2}
+                                                className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
+                                            >
+                                                {skill}
+                                            </div>
+                                        ))}
+                                        </div>
                                     </div>
                                 ))}
-                            </div>
+                            
                         </div>
                     ))}
                 </div>
