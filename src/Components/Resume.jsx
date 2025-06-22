@@ -8,7 +8,6 @@ const Resume = () => {
                 header: "Beginner",
                 skills: [
                     'MongoDB', ' MySQL', 'IOT', 'React']
-
             }, {
                 header: "Intermediate",
                 skills: [
@@ -60,9 +59,7 @@ const Resume = () => {
                                     {tool.header}
                                 </div>
                                 <div className="d-flex flex-wrap">
-
                                     {tool.skills.map((skill, idx2) => (
-
                                         <div
                                             key={idx2}
                                             className='bg-dark skill-btn me-2 mb-2 pe-3 py-2 rounded-pill shadow-sm'
