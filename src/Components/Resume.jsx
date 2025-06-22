@@ -7,7 +7,7 @@ const Resume = () => {
             Tools: [{
                 header: "Beginner",
                 skills: [
-                    'MongoDB',' MySQL', 'IOT', 'React']
+                    'MongoDB', ' MySQL', 'IOT', 'React']
 
             }, {
                 header: "Intermediate",
@@ -26,7 +26,7 @@ const Resume = () => {
         <div className='container mt-4'>
 
             {/* Education Section */}
-            <div className="row">
+            <div className="row text-start">
                 <div className="col-md-6 col-12">
                     <div className='px-3 fs-3 mb-3 about-header'>
                         <i className="fas fa-graduation-cap me-2 text-primary"></i>
@@ -54,13 +54,13 @@ const Resume = () => {
                                 <i className="fas fa-laptop-code me-2 text-primary"></i>
                                 {item.title}
                             </div>
-                            
-                                {item.Tools.map((tool, idx) => (
-                                    <div key={idx}>
-                                        <div className="fs-5 text-secondary  mb-3">
-                                            {tool.header}
-                                        </div>
-                                        <div className="d-flex flex-wrap">
+
+                            {item.Tools.map((tool, idx) => (
+                                <div key={idx}>
+                                    <div className="fs-5 text-secondary  mb-3">
+                                        {tool.header}
+                                    </div>
+                                    <div className="d-flex flex-wrap">
 
                                         {tool.skills.map((skill, idx2) => (
 
@@ -71,17 +71,17 @@ const Resume = () => {
                                                 {skill}
                                             </div>
                                         ))}
-                                        </div>
                                     </div>
-                                ))}
-                            
+                                </div>
+                            ))}
+
                         </div>
                     ))}
                 </div>
             </div>
 
             {/* Projects Section */}
-            <section className="row mt-5" id="projects">
+            <section className="row mt-5 text-start" id="projects">
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-project-diagram me-2 text-primary"></i>
                     My Projects
