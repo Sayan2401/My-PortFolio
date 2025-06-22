@@ -22,7 +22,7 @@ const Resume = () => {
     ];
 
     return (
-        <div className=' mt-4'>
+        <div className='text-start mt-4'>
 
             {/* Education Section */}
             <div className='container'>
