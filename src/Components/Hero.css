@@ -77,10 +77,17 @@ header {
 
 }
 
-/* .fa-arrow-down {
-    align-items: center;
-    text-align: center;
-} */
+@media (max-width:768px) {
+    .hero-title {
+        height: 7rem;
+    }
+}
+@media (max-width:1293px) and (min-width:769px) {
+    .hero-title {
+        height: 8.3rem;
+    }
+}
+
 
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
@@ -107,9 +114,10 @@ header {
         transform: rotate(360deg);
     }
 }
+
 .rotate-animation {
-    animation: rotateInfinite 4s linear infinite;
-    width: 8.8rem;
+    animation: rotateInfinite 5s linear infinite;
+    width: 11.6rem;
 }
 
 .overlay-icon {
@@ -118,5 +126,32 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    color: white; /* Or white depending on background */
+    color: white;
+    /* Or white depending on background */
 }
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.5s forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* @keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */

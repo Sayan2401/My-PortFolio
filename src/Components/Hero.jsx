@@ -5,16 +5,18 @@ import './Hero.css'
 const Hero = () => {
     return (
         <>
-            <div className='text-start my-5 fs-1' >
-                <Typewriter
-                    words={['Hello I Am Chhatrasinh, Software Developer',]}
-                    loop={true}
-                    cursor
-                    cursorStyle='.'
-                    typeSpeed={100}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                />
+            <div className='mb-5' >
+                <p className=' fs-1 hero-title mb-2'>
+                    <Typewriter
+                        words={['Hello I Am Chhatrasinh, Software Developer',]}
+                        loop={true}
+                        cursor
+                        cursorStyle='.'
+                        typeSpeed={100}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                </p>
 
                 <p className='fs-5'>
                     Fueling my journey with curiosity and code,
@@ -35,9 +37,6 @@ const Hero = () => {
                         <i className="fas fa-arrow-down overlay-icon"></i>
                     </a>
                 </div>
-
-
-
             </div>
 
         </>

@@ -36,13 +36,13 @@ const Home = () => {
             ) : (
                 <div>
                     <Header />
-                    <div className="mx-5 px-4 ">
-                        <section id='home'>
+                    <div className="container">
+                        <section id='home' className='mt-5'>
                             <div className="row">
-                                <div className='col-md-4 col-12'>
+                                <div className='col-lg-4 col-12'>
                                     <Leftside />
                                 </div>
-                                <div className='col-md-8 col-12'>
+                                <div className='col-lg-8 col-12'>
                                     <Rightside />
                                 </div>
                             </div>

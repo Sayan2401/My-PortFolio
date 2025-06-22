@@ -2,7 +2,7 @@ import React from 'react';
 
 const Leftside = () => {
     return (
-        <div className='my-5' >
+        <div className='mb-5' >
             {/* Name and Role */}
             <div className="mb-3 text-center">
                 <span className="fs-4 fs-md-3 text-uppercase d-block fw-bold">

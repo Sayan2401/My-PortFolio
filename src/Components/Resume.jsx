@@ -26,7 +26,7 @@ const Resume = () => {
 
             {/* Education Section */}
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-6">
                     <div className='px-3 fs-3 mb-3 about-header'>
                         <i className="fas fa-graduation-cap me-2 text-primary"></i>
                         Education
@@ -47,7 +47,7 @@ const Resume = () => {
 
 
                 {/* Skills Section */}
-                <div className='col-md-6'>
+                <div className='col-lg-6'>
                     {Techs.map((item, index) => (
                         <div key={index}>
                             <div className='px-3 fs-3 mb-3 about-header'>
