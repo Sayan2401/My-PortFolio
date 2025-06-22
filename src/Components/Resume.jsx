@@ -62,7 +62,7 @@ const Resume = () => {
                                     {tool.skills.map((skill, idx2) => (
                                         <div
                                             key={idx2}
-                                            className='bg-dark skill-btn me-2 mb-2 pe-3 py-2 rounded-pill shadow-sm'
+                                            className='bg-dark skill-btn me-2 mb-2 px-3 py-2 rounded-pill shadow-sm'
                                         >
                                             {skill}
                                         </div>
