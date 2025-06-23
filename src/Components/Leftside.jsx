@@ -14,7 +14,7 @@ const Leftside = () => {
             {/* Profile Image */}
             <div className="img-container m-3">
                 <img
-                    src="1695220906205.jpg"
+                    src="1695220906205.webp"
                     alt="Profile"
                     className="img-fluid rounded shadow"
                     

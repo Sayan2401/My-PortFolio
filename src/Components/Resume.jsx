@@ -88,10 +88,10 @@ const Resume = () => {
 
                 <div>
                     <img
-                        src="Eco_LifeStyle.png"
+                        src="Eco_LifeStyle.webp"
                         alt="Eco-Friendly Lifestyle Tracker Web App"
                         className='img-fluid rounded shadow mb-3'
-                        loading="lazy"
+                        
                     />
                     <div className='fs-5'>
                         <strong>EcoFriendly Lifestyle Tracker Web App</strong> - College Project

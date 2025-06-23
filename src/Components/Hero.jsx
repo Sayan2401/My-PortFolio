@@ -30,7 +30,7 @@ const Hero = () => {
                 <div className='text-end'>
                     <a href="#projects" className="position-relative d-inline-block">
                         <img
-                            src="round-text.png"
+                            src="round-text.webp"
                             className="img-fluid rotate-animation"
                             alt="My Projects"
                             
