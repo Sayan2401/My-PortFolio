@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [statusMessage, setStatusMessage] = useState('');
@@ -9,10 +9,10 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm(
-            process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID,
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
             e.target,
-            process.env.REACT_APP_PUBLIC_ID
+            import.meta.env.VITE_PUBLIC_ID
         )
             .then(() => {
                 setStatusMessage('Message sent successfully!');

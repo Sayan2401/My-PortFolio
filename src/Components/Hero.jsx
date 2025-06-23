@@ -32,7 +32,8 @@ const Hero = () => {
                         <img
                             src="round-text.png"
                             className="img-fluid rotate-animation"
-                            alt="round text"
+                            alt="My Projects"
+                            loading="lazy"
                         />
                         <i className="fas fa-arrow-down overlay-icon"></i>
                     </a>

@@ -12,12 +12,12 @@ const Leftside = () => {
             </div>
 
             {/* Profile Image */}
-            <div className='img-container m-3'>
+            <div className="img-container m-3">
                 <img
                     src="1695220906205.jpg"
                     alt="Profile"
-                    className='img-fluid rounded'
-
+                    className="img-fluid rounded shadow"
+                    loading="lazy"
                 />
             </div>
 
