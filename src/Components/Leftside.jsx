@@ -17,7 +17,7 @@ const Leftside = () => {
                     src="1695220906205.jpg"
                     alt="Profile"
                     className="img-fluid rounded shadow"
-                    loading="lazy"
+                    
                 />
             </div>
 
