@@ -50,7 +50,7 @@ const Home = () => {
                         <Resume />
                         <Contact />
                     </div>
-                    <footer className="bg-dark text-light py-4 row">
+                    <footer className="bg-dark py-4 row">
                         <p className="text-center mb-0">
                             &#9400; 2025 Chhatrasinh Parmar. All Rights Reserved.
                         </p>

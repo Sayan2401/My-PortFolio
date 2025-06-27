@@ -7,13 +7,13 @@ const Resume = () => {
             Tools: [{
                 header: "Beginner",
                 skills: [
-                    'MongoDB', ' MySQL', 'IOT', 'React']
+                    'MongoDB', ' MySQL', 'IOT', 'React','SAP ABAP']
             }, {
                 header: "Intermediate",
                 skills: [
                     'Java', 'SQL', 'HTML5', 'CSS', 'JavaScript', 'Bootstrap',
                     'Node.js', 'Express', 'RESTful APIs',
-                    'JWT / OAuth', 'VS Code', 'Git & GitHub', 'Flutter', 'Dart']
+                    'JWT / OAuth', 'Git & GitHub', 'Flutter', 'Dart']
 
             },
 
@@ -95,6 +95,11 @@ const Resume = () => {
                     />
                     <div className='fs-5'>
                         <strong>EcoFriendly Lifestyle Tracker Web App</strong> - College Project
+                    <p className='mt-2'>
+                        <a href="https://github.com/Sayan2401/Flutter_Project" target="_blank" class="text-decoration-none" noopener noreferrer>
+                           <i class="bi bi-link-45deg"></i>   GitHub Link
+                        </a>
+                    </p>
                     </div>
                 </div>
             </section>

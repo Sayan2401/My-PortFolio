@@ -56,7 +56,7 @@ html {
 }
 
 .skill-btn:hover {
-    outline: 1px solid #fb7527;
+    outline: 2px solid #fb7527;
 }
 
 header {
@@ -75,6 +75,9 @@ header {
 .nav-item .nav-link {
     color: white;
 
+}
+a:hover{
+    color: #fb7527;
 }
 
 @media (max-width:768px) {
@@ -129,13 +132,13 @@ header {
     color: white;
     /* Or white depending on background */
 }
-
+/* 
 .word {
   display: inline-block;
   opacity: 0;
   transform: translateY(20px);
   animation: slideInUp 0.5s forwards;
-}
+} */
 
 @keyframes slideInUp {
   to {

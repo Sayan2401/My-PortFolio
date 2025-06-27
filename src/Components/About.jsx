@@ -14,7 +14,7 @@ const About = () => {
                     </p>
 
                     <p className='mb-3'>
-                        I specialize in technologies at varying levels of expertise—<strong>Beginner</strong> in MongoDB, MySQL, IoT, and React, and <strong>Intermediate</strong> in Core Java, HTML5, CSS, JavaScript, Flutter, Node.js, and SQL.
+                        I specialize in technologies at varying levels of expertise—<strong>Beginner</strong> in MongoDB, MySQL, IoT, SAP ABAP and React, and <strong>Intermediate</strong> in Core Java, HTML5, CSS, JavaScript, Flutter, Node.js, and SQL.
                     </p>
 
                     <p className='mb-3'>
@@ -22,7 +22,7 @@ const About = () => {
                     </p>
 
                     <p className='mb-3'>
-                        I’ve trained and participated in initiatives under the <strong>Code Unnati Program</strong>, including advanced blockchain development workshops such as <strong>Arbitrum Governance and Development</strong>.
+                        I've trained and participated in initiatives under the <strong>Code Unnati Program</strong>, including advanced blockchain development workshops such as <strong>Arbitrum Governance and Development</strong>.
                     </p>
 
                     <p>
