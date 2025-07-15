@@ -5,13 +5,13 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'edu&skill','certifications', 'projects', 'contact'];
+      const sections = ['home', 'about', 'education_skill', 'certifications', 'projects', 'contact'];
       const offsets = sections.map(id => {
         const el = document.getElementById(id);
         return el ? { id, offsetTop: el.offsetTop } : null;
       }).filter(Boolean);
 
-      const scrollY = window.scrollY + 100; // 100px offset for early highlight
+      const scrollY = window.scrollY + 90; // 100px offset for early highlight
       for (let i = offsets.length - 1; i >= 0; i--) {
         if (scrollY >= offsets[i].offsetTop) {
           setActiveTab(offsets[i].id);
@@ -54,11 +54,11 @@ function Header() {
                 About
               </a>
             </li>
-             <li className="nav-item">
+            <li className="nav-item">
               <a
-                className={`nav-link ${activeTab === 'edu&skill' ? 'active' : ''}`}
-                onClick={() => setActiveTab('edu&skill')}
-                href="#edu&skill"
+                className={`nav-link ${activeTab === 'education_skill' ? 'active' : ''}`}
+                onClick={() => setActiveTab('education_skill')}
+                href="#education_skill"
               >
                 <i className="fas fa-laptop-code me-2 text-primary"></i>
                 Educations and Skills

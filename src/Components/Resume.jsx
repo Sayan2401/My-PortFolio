@@ -23,7 +23,7 @@ const Resume = () => {
         <div className='mt-4'>
 
             {/* Education Section */}
-            <div className="row" id='edu&skill'>
+            <div className="row" id='education_skill'>
                 <div className="col-lg-6">
                     <div className='px-3 fs-3 mb-4 about-header'>
                         <i className="fas fa-graduation-cap me-2 text-primary"></i>
@@ -88,7 +88,7 @@ const Resume = () => {
 
                 {/* SAP Certification */}
                 <div className="d-flex flex-column flex-md-row  rounded shadow-sm mb-4">
-                        {/* <img
+                    {/* <img
       src="https://images.credly.com/size/680x680/images/65fe9e2c-6cac-4584-a5c3-a65e01516e7d/image.png" // SAP ABAP badge image URL
       alt="SAP Certified Associate Badge"
       className="img-fluid  me-md-4 mb-3 mb-md-0"
@@ -135,7 +135,7 @@ const Resume = () => {
                         src="Eco_LifeStyle.webp"
                         alt="Eco-Friendly Lifestyle Tracker Web App"
                         className='img-fluid rounded shadow mb-3'
-                        
+
                     />
                     <div className='fs-5'>
                         <strong>EcoFriendly Lifestyle Tracker Web App</strong> - College Project
