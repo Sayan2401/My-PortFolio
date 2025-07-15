@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section id='about' className=' my-4'>
-            <div className='text-start'>
+        <section id='about' className='my-4'>
+            <div >
                 <div className='px-3 fs-3 mb-3 about-header'>
                     <i className="fas fa-user-gear me-2 text-primary"></i>
                     About Me

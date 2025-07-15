@@ -3,19 +3,19 @@
   "name": "Chhatrasinh's Portfolio",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",         
-  "background_color": "#000000",   
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "orientation": "portrait",
   "lang": "en",
   "description": "A dark-themed portfolio by Chhatrasinh Parmar.",
   "icons": [
     {
-      "src": "S-Logo.jpg",
+      "src": "S_Logo.png",
       "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "S-logo.jpg",
+      "src": "S_Logo.png",
       "type": "image/jpg",
       "sizes": "512x512"
     }

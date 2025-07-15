@@ -5,7 +5,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'contact'];
+      const sections = ['home', 'about', 'edu&skill','certifications', 'projects', 'contact'];
       const offsets = sections.map(id => {
         const el = document.getElementById(id);
         return el ? { id, offsetTop: el.offsetTop } : null;
@@ -38,7 +38,7 @@ function Header() {
               <a
                 className={`nav-link ${activeTab === 'home' ? 'active' : ''}`}
                 onClick={() => setActiveTab('home')}
-                href="#home"
+                href="#"
               >
                 <i className="fas fa-home me-2 text-primary"></i>
                 Home
@@ -52,6 +52,26 @@ function Header() {
               >
                 <i className="fas fa-user-gear me-2 text-primary"></i>
                 About
+              </a>
+            </li>
+             <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'edu&skill' ? 'active' : ''}`}
+                onClick={() => setActiveTab('edu&skill')}
+                href="#edu&skill"
+              >
+                <i className="fas fa-laptop-code me-2 text-primary"></i>
+                Educations and Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={`nav-link ${activeTab === 'certifications' ? 'active' : ''}`}
+                onClick={() => setActiveTab('certifications')}
+                href="#certifications"
+              >
+                <i className="fas fa-certificate me-2 text-primary"></i>
+                Certifications
               </a>
             </li>
             <li className="nav-item">
